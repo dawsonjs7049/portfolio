@@ -1,0 +1,6 @@
+This is a react project made with next.js
+    -> npx create-next-app@latest
+
+We also are using tailwindcss
+    -> npm install -D tailwindcss
+    -> next do npx tailwindcss init (for customization of tailwind)
