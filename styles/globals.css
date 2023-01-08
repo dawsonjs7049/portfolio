@@ -76,6 +76,7 @@ a {
 
 .card {
   transition: all .5s ease-in-out;
+  width: 325px;
 }
 
 .card:hover {
@@ -83,8 +84,9 @@ a {
 }
 
 .card img {
-  width: 50%;
-  height: auto;
+  width: auto;
+
+  height: 220px;
   animation-duration: 3s;
   animation-iteration-count: infinite;
 
@@ -92,15 +94,17 @@ a {
   animation-timing-function: ease-in-out;
 }
 
+.logo-div img {
+  width: 100px;
+  height: 100px;
+}
+
 @keyframes bounce {
   0% { transform: translateY(0) }
   50% { transform: translateY(-5px) }
   100% { transform: translateY(0) }
 }
-/* .card:hover img {
-  animation-name: bounce;
-  animation-timing-function: ease-in-out;
-} */
+
 
 @media (prefers-color-scheme: dark) {
   html {

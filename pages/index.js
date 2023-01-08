@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillLinkedin} from 'react-icons/ai';
+import {AiFillLinkedin, AiOutlineMail, AiOutlinePhone} from 'react-icons/ai';
 
 import Fade from 'react-reveal/Fade';
 
@@ -19,9 +19,19 @@ import web4 from '../public/web4.png';
 import web5 from '../public/web5.png';
 import web6 from '../public/web6.png';
 
+import travel from '../public/travel.png';
 import packers from '../public/packers.png';
 import climbing from '../public/climbing.png';
 import wizard from '../public/wizard.png';
+
+import javascript from '../public/javascript.png';
+import php from '../public/php.png';
+import angular from '../public/angular.png';
+import reactImg from '../public/react-img.png';
+import mysql from '../public/mysql.png';
+import firebase from '../public/firebase.png';
+import java from '../public/java.png';
+import android from '../public/android.png';
 
 import { useState } from 'react';
 
@@ -40,24 +50,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <main className="bg-white px-10 md-px-20 lg:px-40 dark:bg-gray-700">
+      <main className="bg-white dark:bg-gray-700">
         <Fade top distance="5%" duration={1500}>
-          <section className="min-h-screen">
-            <nav className="py-10 mb-12 flex justify-between">
-              <h1 className="text-xl">{'<'} Dawson Designs {'>'}</h1>
-              <ul className="flex items-center">
+          <section className="pb-10 px-10 md-px-20 lg:px-40">
+            <nav className="py-10 mb-8 flex flex-col justify-between align-middle md:flex-row md:justify-between md:align-middle">
+              <h1 className="text-3xl text-teal-600 font-bold text-center">Dawson Designs</h1>
+              <ul className="flex flex-row justify-center mt-5 md:mt-0">
                 <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl"/></li>
-                <li><AiFillLinkedin className="cursor-pointer text-2xl"/></li>
-                <li><a href="www.macrumors.com" className=" bg-gradient-to-r from-cyan-300 to-cyan-500 text-white px-4 py-2 rounded-md ml-8">LinkedIn Page</a></li>  
+                <li><a href="https://www.linkedin.com/in/jakedawson906" className="bg-gradient-to-r from-cyan-300 to-cyan-500 text-white px-4 py-2 rounded-md ml-8" target="_blank">LinkedIn</a></li>  
               </ul>  
             </nav>
-            <div className="text-center p-10">
+            <div className="text-center">
               <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Jake Dawson</h2>
-              <h3 className="text-2xl py-2 md:text-3xl">Developer</h3>
+              <h3 className="text-2xl py-2 md:text-3xl">Full-Stack Developer</h3>
               <p className="text-md py-2 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
-                Full-Stack Developer with experience in PHP, Javascript (Plain and React/Angular), and Java
-                Full-Stack Developer with experience in PHP, Javascript (Plain and React/Angular), and Java
-                Full-Stack Developer with experience in PHP, Javascript (Plain and React/Angular), and Java
+                Full-Stack Developer with experience in PHP, Javascript (Plain + React/Angular), Java, and more.
               </p>
             </div>
             <div className="relative bg-gradient-to-b from-teal-500 mx-auto rounded-full w-80 h-80 overflow-hidden md:h-96 md:w-96 mb-10">
@@ -65,41 +72,94 @@ export default function Home() {
             </div>
           </section>
           
-          <section>
+          <section className="px-10 py-10 md-px-20 lg:px-40 bg-teal-100">
             <div>
-              <h3 className="text-3xl py-1">Services I Offer</h3>
-              <p className="text-md ply-2 leading-8 text-gray-800"> bla bla bla bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla</p>
-              <p className="text-md ply-2 leading-8 text-gray-800"> bla bla bla bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla</p>
+              <h3 className="text-3xl py-1">A Little About Me</h3>
+              <p className="text-md ply-2 leading-8 text-gray-800">
+                Hey there! My name is Jake Dawson. I'm graduate from the University of Wisconsin - Eau Claire, where I majored in Software Engineering with a minor in Physics. 
+                I'm a naturally curious person who enjoys interesting challenges that allow me to pick up new skills and expand on ones I may already have! While in 
+                my professional career I have mostly worked by myself, I have experience working in teams and I enjoy the group problem-solving dynamic and ability to 
+                watch a large project come together.
+              </p>
+              <p className="text-md ply-2 leading-8 text-gray-800 mt-3">
+                Beyond the work-oriented aspects of my life, I have a variety of different passions and interests. Football has been a large part of my life since I watched Aaron Rodgers
+                lead the Packers to a Superbowl win, may he do so again! I enjoy exercising in my free time where I often listen to audiobooks, and occasionally I can be found reading an actual physical book!
+                I also dabble in woodworking and playing the piano, though I don't recommend being too close with the latter. With my friends, you can often find me playing games or watching movies (horror is our favorite!).
+              </p>
             </div>
-            <div className="lg:flex gap-10">
-              <div className="card text-center shadow-lg p-10 rounded-xl my-10">
-                <Image src={packers} className="mx-auto"/>
-                <h3 className="my-3">Beautiful Designs</h3>
-                <p>Bla bla bla bla bla bla bla</p>
+            <div className="flex flex-wrap flex-row justify-evenly">
+              <div className="card bg-white text-center shadow-lg p-5 rounded-xl my-10">
+                <Image src={travel} className="mx-auto"/>
+                <h3 className="my-3 font-bold">Traveling</h3>
+                <p>Experiencing other's culture and history is fascinating. Sunny beaches are nice too.</p>
               </div>
              
-              <div className="card text-center shadow-lg p-10 rounded-xl my-10">
+              <div className="card bg-white text-center shadow-lg p-5 rounded-xl my-10">
                 <Image src={climbing} className="mx-auto"/>
-                <h3 className="my-3">Beautiful Designs</h3>
-                <p>Bla bla bla bla bla bla bla</p>
+                <h3 className="my-3 font-bold">Exercise</h3>
+                <p>The gym, and more recently bouldering, are a favorite time-sink of mine.</p>
               </div>
 
-              <div className="card text-center shadow-lg p-10 rounded-xl my-10">
+              <div className="card bg-white text-center shadow-lg p-5 rounded-xl my-10">
                 <Image src={wizard} className="mx-auto"/>
-                <h3 className="my-3">Beautiful Designs</h3>
-                <p>Bla bla bla bla bla bla bla</p>
+                <h3 className="my-3 font-bold">Books</h3>
+                <p>I love a good fantasy story, only ask for a recommendation if you're ready for 20!</p>
               </div>
 
             </div>
           </section>
 
-          <section>
+          <section className="py-10 px-10 md-px-20 lg:px-40">
             <div>
-              <h3 className="text-3xl py-1">Portfolio</h3>
-              <p className="text-md ply-2 leading-8 text-gray-800"> bla bla bla bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla</p>
-              <p className="text-md ply-2 leading-8 text-gray-800"> bla bla bla bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla</p>
+              <h3 className="text-3xl py-1">Tech I've Used</h3>
+              <p className="text-md ply-2 leading-8 text-gray-800">
+                In my professional career, I've mainly focused on utilizing PHP with Javascript, jQuery, MySQL, and Bootstrap
+                to create fluid web applications. I've also learned the Android Java SDK to build an Android application that 
+                controls machinery via Modbus that also interfaces with bluetooth components and internal APIs.
+              </p>
+              <p className="text-md ply-2 leading-8 text-gray-800 mt-3">
+                In my personal time, I've enjoyed learning how to use the React and Angular javascript frameworks to create useful
+                projects like Scrooge, a finance-tracking application. I've also built a password-tracking site complete with encryption,
+                a book-tracking site, and a booking site for a shared cabin. All of these applications interface with Firebase
+                to store user data, some are styled via Bootstrap, some like this site with Tailwind CSS, and others with plain custom CSS. 
+              </p>
+              <p className="text-md ply-2 leading-8 text-gray-800 mt-3">
+                I've also dabbled in simple iOS development and even small Discord bots. I enjoy trying new technology and frameworks and 
+                I look forward to the opportunity to learn and grow in new areas in the future!
+              </p>
+            </div>
+            <div className="flex flex-row flex-wrap justify-evenly align-middle logo-div">
+                <Image src={php} className="p-5 m-2" />
+                <Image src={java} className="p-5 m-2" />
+                <Image src={javascript} className="p-5 m-2" />
+                <Image src={reactImg} className="p-5 m-2" />
+                <Image src={angular} className="p-5 m-2" />
+                <Image src={android} className="p-5 m-2" />
+                <Image src={mysql} className="p-5 m-2" />
+                <Image src={firebase} className="p-5 m-2" />
+            </div>
+          </section>
+
+          <section className="py-10 px-10 md-px-20 lg:px-40 bg-teal-100">
+            <div>
+              <h3 className="text-3xl py-1">Projects</h3>
             </div>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+              <div>
+                <h2 className="text-2xl">Scrooge</h2>
+                <p className="mb-2">A personal-finance application built in Angular with a Firebase backend.</p>
+                <video controls src={"/scrooge.mp4"} className="rounded-md shadow-lg"></video>
+              </div>
+              <div>
+                <h2 className="text-2xl">The Pigeon Koop</h2>
+                <p className="mb-2">A React website with a Firebase backend for a shared hunting cabin.</p>
+                <video controls src={"/cabin.mp4"} className="rounded-md shadow-lg"></video>
+              </div>
+              <div>
+                <h2 className="text-2xl">Bookshelf</h2>
+                <p className="mb-2">A React website with a Firebase backend for tracking and organizing read books.</p>
+                <video controls src={"/bookshelf.mp4"} className="rounded-md shadow-lg"></video>
+              </div>
               <div className="basis-1/3 flex-1">
                 <Image src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
               </div>
@@ -109,15 +169,14 @@ export default function Home() {
               <div className="basis-1/3 flex-1">
                 <Image src={web3} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
               </div>
-              <div className="basis-1/3 flex-1">
-                <Image src={web4} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-              </div>
-              <div className="basis-1/3 flex-1">
-                <Image src={web5} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-              </div>
-              <div className="basis-1/3 flex-1">
-                <Image src={web6} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"/>
-              </div>
+              
+            </div>
+          </section>
+
+          <section className="h-20 flex flex-col justify-center px-10 md-px-20 lg:px-40 bg-gray-600">
+            <div className="w-100 flex flex-col justify-evenly align-middle md:flex-row">
+              <div className="flex flex-row align-middle mx-auto"><AiOutlineMail className="text-xl mr-1" /><a href="mailto:dawson9060@gmail.com" className="text-blue-400">dawson9060@gmail.com</a></div>
+              <div className="flex flex-row align-middle mx-auto"><AiOutlinePhone className="text-xl mr-1" /><a href="tel:17158947876" className="text-blue-400">715-894-7876</a></div>
             </div>
           </section>
         </Fade>
