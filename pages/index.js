@@ -68,7 +68,7 @@ export default function Home() {
                 Full-Stack Developer with experience in PHP, Javascript (Plain + React/Angular), Java, and more.
               </p>
             </div>
-            <div className="relative bg-gradient-to-b from-teal-500 mx-auto rounded-full w-56 h-56 md:w-80 md:h-80 lg:w-96 lg:h-96 overflow-hidden mb-10">
+            <div className="relative bg-gradient-to-b from-teal-500 mx-auto mt-6 rounded-full w-56 h-56 md:w-80 md:h-80 lg:w-96 lg:h-96 overflow-hidden mb-10">
               <Image src={slack_picture} layout="fill" objectFit="cover" />
             </div>
           </section>
