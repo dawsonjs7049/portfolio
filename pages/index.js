@@ -57,7 +57,7 @@ export default function Home() {
             <nav className="py-10 mb-8 flex flex-col justify-between align-middle md:flex-row md:justify-between md:align-middle">
               <h1 className="text-3xl text-teal-600 font-bold text-center dark:text-white">Dawson Designs</h1>
               <ul className="flex flex-row justify-center mt-5 md:mt-0">
-                <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl"/></li>
+                <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" stroke="black" fill="black"/></li>
                 <li><a href="https://www.linkedin.com/in/jakedawson906" className="bg-gradient-to-r from-cyan-300 to-cyan-500 text-white px-4 py-2 rounded-md ml-8 shadow-lg" target="_blank">LinkedIn</a></li>  
               </ul>  
             </nav>
