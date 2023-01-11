@@ -68,14 +68,14 @@ export default function Home() {
                 Full-Stack Developer with experience in PHP, Javascript (Plain + React/Angular), Java, and more.
               </p>
             </div>
-            <div className="relative bg-gradient-to-b from-teal-500 mx-auto mt-6 rounded-full w-56 h-56 md:w-80 md:h-80 lg:w-96 lg:h-96 overflow-hidden mb-10">
+            <div className="relative bg-gradient-to-b from-teal-500 mx-auto mt-6 rounded-full w-56 h-56 md:w-80 md:h-80 lg:w-96 lg:h-96 overflow-hidden mb-10 shadow-xl">
               <Image src={slack_picture} layout="fill" objectFit="cover" />
             </div>
           </section>
           
           <section className="px-10 py-10 md-px-20 lg:px-40 bg-sky-100 dark:bg-gray-500">
             <div>
-              <h3 className="text-3xl py-1 dark:text-white">A Little About Me</h3>
+              <h3 className="text-3xl py-1 text-black dark:text-white">A Little About Me</h3>
               <p className="text-md ply-2 leading-8 text-gray-800 dark:text-white">
                 Hey there! My name is Jake Dawson. I'm graduate from the University of Wisconsin - Eau Claire, where I majored in Software Engineering with a minor in Physics. 
                 I'm a naturally curious person who enjoys interesting challenges that allow me to pick up new skills and expand on ones I may already have! While in 
@@ -92,19 +92,19 @@ export default function Home() {
               <div className="card bg-white text-center shadow-lg p-5 rounded-xl my-5">
                 <Image src={travel} className="mx-auto"/>
                 <h3 className="my-3 font-bold">Traveling</h3>
-                <p>Experiencing other's culture and history is fascinating. Sunny beaches are nice too.</p>
+                <p class="text-black">Experiencing other's culture and history is fascinating. Sunny beaches are nice too.</p>
               </div>
              
               <div className="card bg-white text-center shadow-lg p-5 rounded-xl my-5">
                 <Image src={climbing} className="mx-auto"/>
                 <h3 className="my-3 font-bold">Exercise</h3>
-                <p>The gym, and more recently bouldering, are a favorite time-sink of mine.</p>
+                <p class="text-black">The gym, and more recently bouldering, are a favorite time-sink of mine.</p>
               </div>
 
               <div className="card bg-white text-center shadow-lg p-5 rounded-xl my-5">
                 <Image src={wizard} className="mx-auto"/>
                 <h3 className="my-3 font-bold">Books</h3>
-                <p>I love a good fantasy story, only ask for a recommendation if you're ready for 20!</p>
+                <p class="text-black">I love a good fantasy story, only ask for a recommendation if you're ready for 20!</p>
               </div>
 
             </div>
@@ -112,7 +112,7 @@ export default function Home() {
 
           <section className="py-10 px-10 md-px-20 lg:px-40">
             <div>
-              <h3 className="text-3xl py-1 dark:text-white">Tech I've Used</h3>
+              <h3 className="text-3xl py-1 text-black dark:text-white">Tech I've Used</h3>
               <p className="text-md ply-2 leading-8 text-gray-800 dark:text-white">
                 In my professional career, I've mainly focused on utilizing PHP with Javascript, jQuery, MySQL, and Bootstrap
                 to create fluid web applications. I've also learned the Android Java SDK to build an Android application that 
@@ -145,21 +145,21 @@ export default function Home() {
 
           <section className="py-10 px-10 md-px-20 lg:px-40 bg-sky-100 dark:bg-gray-500">
             <div>
-              <h3 className="text-3xl py-1 dark:text-white">Projects</h3>
+              <h3 className="text-3xl py-1 text-black dark:text-white">Projects</h3>
             </div>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
               <div>
-                <h2 className="text-2xl dark:text-white">Scrooge</h2>
+                <h2 className="text-2xl text-black dark:text-white">Scrooge</h2>
                 <p className="mb-2 dark:text-white">A personal-finance application built in Angular with a Firebase backend.</p>
                 <video controls src={"/scrooge.mp4"} className="rounded-md shadow-lg hover:shadow-2xl"></video>
               </div>
               <div>
-                <h2 className="text-2xl dark:text-white">The Pigeon Koop</h2>
+                <h2 className="text-2xl text-black dark:text-white">The Pigeon Koop</h2>
                 <p className="mb-2 dark:text-white">A React website with a Firebase backend for a shared hunting cabin.</p>
                 <video controls src={"/cabin.mp4"} className="rounded-md shadow-lg hover:shadow-2xl"></video>
               </div>
               <div>
-                <h2 className="text-2xl dark:text-white">Bookshelf</h2>
+                <h2 className="text-2xl text-black dark:text-white">Bookshelf</h2>
                 <p className="mb-2 dark:text-white">A React website with a Firebase backend for tracking and organizing read books.</p>
                 <video controls src={"/bookshelf.mp4"} className="rounded-md shadow-lg hover:shadow-2xl"></video>
               </div>
