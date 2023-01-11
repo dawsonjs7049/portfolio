@@ -121,27 +121,27 @@ export default function Home() {
               <br></br>
               <p className="text-md ply-2 leading-8 text-gray-800 dark:text-white">
                 In the area of frameworks and languages, I've mainly focused on utilizing PHP with Javascript, jQuery, MySQL, and Bootstrap
-                to create fluid web applications in my professional career. I've also learned the Android Java SDK to build an Android application that 
+                to create fluid web applications throughout my professional career. I've also learned the Android Java SDK to build an Android application that 
                 controls machinery via Modbus, as well as the ability to interface with bluetooth components and internal APIs. 
               </p>
-              <h2 class="text-xl font-bold text-center mt-10">Key Accomplishments</h2>
-              <div class="w-full flex flex-row flex-wrap justify-evenly items-center">
-                <div class="p-5 m-5 w-1/3 h-36 rounded-md shadow-md text-center align-middle flex flex-row justify-center items-center hover:shadow-2xl">
+              <h2 class="text-xl font-bold text-center mt-10 text-black dark:text-white">Key Accomplishments</h2>
+              <div class="w-full flex flex-row flex-wrap justify-evenly items-center text-black">
+                <div class="p-5 m-5 w-56 h-44 rounded-md shadow-md text-center align-middle flex flex-row justify-center items-center hover:shadow-2xl dark:bg-slate-100">
                   Redesigned and implemented an ordering system
                 </div>
-                <div class="p-5 m-5 w-1/3 h-36 rounded-md shadow-md text-center align-middle flex flex-row justify-center items-center hover:shadow-2xl">
+                <div class="p-5 m-5 w-56 h-44 rounded-md shadow-md text-center align-middle flex flex-row justify-center items-center hover:shadow-2xl dark:bg-slate-100">
                   Redesigned and implemented a new scheduling system
                 </div>
-                <div class="p-5 m-5 w-1/3 h-36 rounded-md shadow-md text-center align-middle flex flex-row justify-center items-center hover:shadow-2xl">
+                <div class="p-5 m-5 w-56 h-44 rounded-md shadow-md text-center align-middle flex flex-row justify-center items-center hover:shadow-2xl dark:bg-slate-100">
                   Integrated Authorize ACH payment API into ordering system
                 </div>
-                <div class="p-5 m-5 w-1/3 h-36 rounded-md shadow-md text-center align-middle flex flex-row justify-center items-center hover:shadow-2xl">
+                <div class="p-5 m-5 w-56 h-44 rounded-md shadow-md text-center align-middle flex flex-row justify-center items-center hover:shadow-2xl dark:bg-slate-100">
                   Integrated and managed data flow between API's like Twilio, ActiveCampaign, and Zapier
                 </div>
-                <div class="p-5 m-5 w-1/3 h-36 rounded-md shadow-md text-center align-middle flex flex-row justify-center items-center hover:shadow-2xl">
+                <div class="p-5 m-5 w-56 h-44 rounded-md shadow-md text-center align-middle flex flex-row justify-center items-center hover:shadow-2xl dark:bg-slate-100">
                   Designed and implemented a customizable email template system
                 </div>
-                <div class="p-5 m-5 w-1/3 h-36 rounded-md shadow-md text-center align-middle flex flex-row justify-center items-center hover:shadow-2xl">
+                <div class="p-5 m-5 w-56 h-44 rounded-md shadow-md text-center align-middle flex flex-row justify-center items-center hover:shadow-2xl dark:bg-slate-100">
                   Managed creation and maintenance of various cron-job scripts that handled email, SMS, and data management.
                 </div>
               </div>
