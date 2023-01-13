@@ -4,7 +4,7 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import { useState } from 'react';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiOutlineMail, AiOutlinePhone} from 'react-icons/ai';
+import {AiOutlineMail, AiOutlinePhone, AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
 import InfiniteLooper from '../public/Components/InfiniteLooper';
 
 import Fade from 'react-reveal/Fade';
@@ -44,9 +44,10 @@ export default function Home() {
           <section className="pb-10 px-10 md-px-20 lg:px-40">
             <nav className="py-10 mb-8 flex flex-col justify-between align-middle md:flex-row md:justify-between md:align-middle">
               <h1 className="text-3xl text-teal-600 font-bold text-center dark:text-white">Dawson Designs</h1>
-              <ul className="flex flex-row justify-center mt-5 md:mt-0">
-                <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl" stroke="black" fill="black"/></li>
-                <li><a href="https://www.linkedin.com/in/jakedawson906" className="bg-gradient-to-r from-cyan-300 to-cyan-500 text-white px-4 py-2 rounded-md ml-8 shadow-lg" target="_blank">LinkedIn</a></li>  
+              <ul className="flex flex-row justify-center items-center mt-5 md:mt-0">
+                <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-3xl" stroke="black" fill="black"/></li>
+                <li className="mx-5"><a href="https://github.com/dawsonjs7049" target="_blank"><AiFillGithub className="cursor-pointer text-4xl" stroke="black" fill="black"/></a></li>
+                <li><a href="https://www.linkedin.com/in/jakedawson906" target="_blank"><AiFillLinkedin className="cursor-pointer text-4xl" stroke="black" fill="black"/></a></li>
               </ul>  
             </nav>
             <div className="text-center">
