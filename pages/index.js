@@ -23,6 +23,7 @@ import java from '../public/java.png';
 import android from '../public/android.png';
 import slack_picture from '../public/slack_picture.jpg';
 import picture from '../public/resume_picture.jpg';
+import tilted_typing from '../public/tilted-typing.png';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -184,6 +185,11 @@ export default function Home() {
                 <h2 className="text-2xl text-black dark:text-white">Bookshelf</h2>
                 <p className="mb-2 text-black dark:text-white">A React website with a Firebase backend for tracking and organizing read books.</p>
                 <video controls src={"/bookshelf.mp4"} className="rounded-md shadow-lg hover:shadow-2xl"></video>
+              </div>
+              <div>
+                <h2 className="text-2xl text-black dark:text-white">Tilted Typing</h2>
+                <p className="mb-2 text-black dark:text-white">An Angular site where you can test your typing skills, click to try. Turn tilted mode on for some fun!</p>
+                <a href="https://tiltedtyping.netlify.app/home" target="_blank"><Image src={tilted_typing} class="rounded-md shadow-lg hover:shadow-2xl" /></a>
               </div>
             </div>
           </section>
