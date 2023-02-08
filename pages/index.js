@@ -24,6 +24,7 @@ import android from '../public/android.png';
 import slack_picture from '../public/slack_picture.jpg';
 import picture from '../public/resume_picture.jpg';
 import tilted_typing from '../public/tilted-typing.png';
+import cookbook from '../public/cookbook.png';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -171,6 +172,11 @@ export default function Home() {
               <h3 className="text-3xl py-1 text-black dark:text-white">Projects</h3>
             </div>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+              <div>
+                <h2 className="text-2xl text-black dark:text-white">Cookbook</h2>
+                <p className="mb-2 text-black dark:text-white">A React site with a Firebase backend, store and lookup recipes! Click to try it out.</p>
+                <a href="https://easycookbook.netlify.app/" target="_blank"><Image src={cookbook} class="rounded-md shadow-lg hover:shadow-2xl" /></a>
+              </div>
               <div>
                 <h2 className="text-2xl text-black dark:text-white">Scrooge</h2>
                 <p className="mb-2 text-black dark:text-white">A personal-finance application built in Angular with a Firebase backend.</p>
