@@ -42,7 +42,7 @@ export default function Home() {
       </Head>
       
       <main className="bg-white dark:bg-gray-700">
-        <Fade top distance="5%" duration={1500}>
+        <Fade top distance="75px" fraction=".1" duration={1500}>
           <section className="pb-10 px-10 md-px-20 lg:px-40">
             <nav className="py-10 mb-8 flex flex-col justify-between align-middle md:flex-row md:justify-between md:align-middle">
               <h1 className="text-3xl text-teal-600 font-bold text-center dark:text-white">Dawson Designs</h1>
@@ -199,14 +199,14 @@ export default function Home() {
               </div>
             </div>
           </section>
+        </Fade>
 
-          <section className="h-20 flex flex-col justify-center px-10 md-px-20 lg:px-40 bg-gray-600 dark:bg-gray-800">
+        <section className="h-20 flex flex-col justify-center px-10 md-px-20 lg:px-40 bg-gray-600 dark:bg-gray-800">
             <div className="w-100 flex flex-col justify-evenly align-middle md:flex-row">
               <div className="flex flex-row align-middle mx-auto"><AiOutlineMail className="text-2xl mr-1" /><a href="mailto:dawson9060@gmail.com" className="text-blue-400">dawson9060@gmail.com</a></div>
               <div className="flex flex-row align-middle mx-auto mt-2 md:mt-0"><AiOutlinePhone className="text-2xl mr-1" /><a href="tel:17158947876" className="text-blue-400">715-894-7876</a></div>
             </div>
-          </section>
-        </Fade>
+        </section>
         
       </main>
     </div>
